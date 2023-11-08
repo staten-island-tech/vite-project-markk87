@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -12,8 +12,11 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1 class=custom>Hello World</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+    <div class="warm">
+      <button id="warmbutton" type="button">Warm</button>
+    </div>
+    <div>
+      <button id="coolbutton" type="button">Cool</button>
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
@@ -21,4 +24,4 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+

@@ -3,10 +3,11 @@
   --dark-blue: #00008B;
   --light-red: #FF7F7F;
   --dark-red: #8b0000;
-  
+
 }
 
-.custom {
+.warm {
+  display: inline;
   background-color: var(--light-blue);
 }
 
