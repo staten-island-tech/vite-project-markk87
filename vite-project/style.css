@@ -1,5 +1,9 @@
 :root {
-  --light-blue: #2998ff
+  --light-blue: #2998ff;
+  --dark-blue: #00008B;
+  --light-red: #FF7F7F;
+  --dark-red: #8b0000;
+  
 }
 
 .custom {
