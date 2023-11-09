@@ -4,11 +4,20 @@
   --light-red: #FF7F7F;
   --dark-red: #8b0000;
 
+
+  --primary-warm: var(--light-red);
+  --secondary-warm: var(--dark-red);
+
+  --primary-cool: var(--light-blue);
+  --secondary-cool: var(--dark-blue);
 }
 
 .warm {
-  display: inline;
-  background-color: var(--light-blue);
+  background-color: var(--primary-warm);
+}
+
+.cool {
+  background-color: var(--primary-cool);
 }
 
 a {
