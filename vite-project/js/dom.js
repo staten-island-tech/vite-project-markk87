@@ -16,3 +16,10 @@ document.querySelector(".wbut").addEventListener("click", function event() {
   
   
 })
+
+console.log("Brand:", Cars[0].brand);
+console.log("Model:", Cars[0].model);
+console.log("Year:", Cars[0].year);
+console.log("Color:", Cars[0].color);
+console.log("Price:", Cars[0].price);
+console.log("Features:", Cars[0].features.join(", "));

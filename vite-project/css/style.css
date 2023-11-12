@@ -20,8 +20,39 @@
   background-color: var(--primary-cool);
 }
 
-#cooler {
+.wbut {
+  display: block;
   color:black;
-  border-radius: 20px;
+  border-radius: 8px;
   border: 4px solid black;
+  border-style: solid;
+  font-size: 2rem;
+  cursor: pointer;
+  background: var(--secondary-warm)
+}
+
+li {
+  float: right;
+  border-radius: 12px;
+  margin-right: 2%;
+}
+
+.all,
+.luxury,
+.fast,
+.sport,
+.cheap {
+  font-size: 1.3rem;
+  border: 4px solid black;
+  border-radius: 12px;
+  background: var(--secondary-warm);
+  cursor: pointer;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
