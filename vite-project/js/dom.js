@@ -17,6 +17,8 @@ document.querySelector(".wbut").addEventListener("click", function event() {
   
 })
 
+
+
 console.log("Brand:", Cars[0].brand);
 console.log("Model:", Cars[0].model);
 console.log("Year:", Cars[0].year);
