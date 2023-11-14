@@ -16,9 +16,16 @@
 .warm {
   background-color: var(--primary-warm);
 }
+.warm-secondary {
+  background-color: var(--secondary-warm);
+}
 
 .cool {
   background-color: var(--primary-cool);
+}
+
+.cool-secondary {
+  background-color: var(--secondary-cool);
 }
 
 .wbut {
@@ -35,7 +42,7 @@
 li {
   float: right;
   border-radius: 12px;
-  margin-right: 2%;
+  margin-right: 2%; 
 }
 
 .all,
