@@ -9,7 +9,6 @@ const DOMSelectors = {
   cheap: document.querySelector(".cheap"),
   fast: document.querySelector(".fast")
 };
-// var myButton = document.getElementsByTagName("button");
 
 document.querySelector(".wbut").addEventListener("click", function event() {
   if (document.body.classList.contains("cool")) {
