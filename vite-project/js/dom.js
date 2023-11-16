@@ -1,7 +1,7 @@
 import "../css/style.css";
 import { Cars } from "./menu";
 
-const DOMSelectors = {
+var DOMSelectors = {
   gallery: document.querySelector(".gallery"),
   catalog: document.querySelector(".all"),
   luxury: document.querySelector(".luxury"),
@@ -23,10 +23,24 @@ document.querySelector(".wbut").addEventListener("click", function event() {
 
 });
 
-function createCard() {
-  DOMSelectors.gallery.insertAdjacentHTML('beforeend', `<h2>Hello</h2>`);
-}
+const poorPeopleCars = Cars.filter((fart)=> fart.price < 23000)
 
+DOMSelectors.sport.addEventListener('click',function(e){
+  e.preventDefault();
+  function fart(){
+    poorPeopleCars.forEach((farts)=>{
+      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2>${farts.brand}</h2></div>`)
+    })
+  }
+  // if (document.body.classList.contains("warm")) {
+  //   DOMSelectors.sport.classList.add("card-warm");
+  //   DOMSelectors.sport.classList.remove("card-cool");
+  // } else {
+  //   DOMSelectors.sport.classList.remove("card-warm");
+  //   DOMSelectors.sport.classList.add("card-cool");
+  // }
+  fart()
+})
 
 document.querySelector(".all").addEventListener("click", function makeCardsFr() {
   createCard();
