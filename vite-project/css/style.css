@@ -40,6 +40,11 @@
   background: var(--black)
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 li {
   float: right;
   border-radius: 12px;
@@ -67,7 +72,7 @@ li {
 
 .card-cool {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   height: 20vh;
   margin: 3%;
   border-radius: 30px;
@@ -79,11 +84,10 @@ li {
 }
 
 .card-warm {
-  display: flex;
-  flex-wrap: wrap;
   height: 20vh;
   margin: 3%;
   border-radius: 30px;
+
   align-items: center;
   color: black;
   width: 30%;

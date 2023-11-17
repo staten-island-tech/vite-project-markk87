@@ -1,7 +1,7 @@
 import "../css/style.css";
 import { Cars } from "./menu";
 
-var DOMSelectors = {
+const DOMSelectors = {
   gallery: document.querySelector(".gallery"),
   catalog: document.querySelector(".all"),
   average: document.querySelector(".average"),
@@ -18,10 +18,13 @@ document.querySelector(".wbut").addEventListener("click", function event() {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
     document.querySelector(".wbut").textContent = "Night";
+
+
   } else {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
     document.querySelector(".wbut").textContent = "Morning";
+
   };
 
 });
