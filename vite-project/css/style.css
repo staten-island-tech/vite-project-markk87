@@ -47,10 +47,9 @@ li {
 }
 
 .all,
-.luxury,
-.fast,
-.sport,
-.cheap {
+.cheap,
+.expensive,
+.average {
   font-size: 1.3rem;
   border: 4px solid black;
   border-radius: 12px;
@@ -91,3 +90,4 @@ li {
   border: 5px solid black;
   background-color: var(--secondary-warm);
 }
+
