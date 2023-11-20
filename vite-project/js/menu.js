@@ -3,25 +3,29 @@ const Cars = [
         "price": 10000,
         "model": "Civic",
         "features": ["Bluetooth", "Backup Camera", "Lane Departure Warning"],
-        "brand": "Honda"
+        "brand": "Honda",
+        "img": "https://images.unsplash.com/photo-1612692165005-d22dc8db608e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9uZGElMjBjaXZpY3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "price": 15000,
         "model": "Accord",
         "features": ["Apple CarPlay", "Android Auto", "Blind Spot Monitoring"],
-        "brand": "Honda"
+        "brand": "Honda",
+        "img": "https://images.unsplash.com/photo-1614220654876-8a75c41f7a7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZGElMjBhY2NvcmR8ZW58MHx8MHx8fDA%3D"
     },
     {
         "price": 20000,
         "model": "Camry",
         "features": ["Adaptive Cruise Control", "Lane Keeping Assist", "Rear Cross Traffic Alert"],
-        "brand": "Toyota"
+        "brand": "Toyota",
+        "img": "https://images.unsplash.com/photo-1624578571415-09e9b1991929?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG95b3RhJTIwY2Ftcnl8ZW58MHx8MHx8fDA%3D"
     },
     {
         "price": 25000,
         "model": "Corolla",
         "features": ["Automatic Emergency Braking", "Lane Departure Warning", "Pedestrian Detection"],
-        "brand": "Toyota"
+        "brand": "Toyota",
+        "img": ""
     },
     {
         "price": 30000,

@@ -39,7 +39,7 @@ DOMSelectors.cheap.addEventListener('click',function(e){
   clearInputs();
   function makeCard(){
     poorPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2>${farts.brand} ${farts.model}</h2></div>`)
+      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model} </h2><img src=${farts.img} class=img></div>`)
     })
   }
   makeCard();

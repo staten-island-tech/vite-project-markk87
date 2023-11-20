@@ -29,6 +29,7 @@
 }
 
 
+
 .wbut {
   display: block;
   color:white;
@@ -55,6 +56,9 @@ li {
 .cheap,
 .expensive,
 .average {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-size: 1.3rem;
   border: 4px solid black;
   border-radius: 12px;
@@ -72,9 +76,13 @@ li {
 
 .card-cool {
   display: flex;
-  justify-content: space-between;
-  height: 20vh;
-  margin: 3%;
+  justify-content: space-around;
+  
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 60vh;
+  margin: 3% 3% 3% 3%;
   border-radius: 30px;
   align-items: center;
   color: white;
@@ -83,15 +91,14 @@ li {
   background-color: var(--secondary-cool);
 }
 
-.card-warm {
-  height: 20vh;
-  margin: 3%;
-  border-radius: 30px;
-
-  align-items: center;
-  color: black;
-  width: 30%;
-  border: 5px solid black;
-  background-color: var(--secondary-warm);
+.card-desc {
+  font-size: 1.7rem;
 }
 
+
+.img {
+  display: flex;
+  width: 65%;
+  height: auto;
+  object-fit: cover;
+}
