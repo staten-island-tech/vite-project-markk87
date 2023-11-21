@@ -50,7 +50,7 @@ DOMSelectors.average.addEventListener('click',function(e){
   clearInputs();
   function makeCard(){
     normalPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2>${farts.brand} ${farts.model}</h2></div>`)
+      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
     })
   }
   makeCard();
@@ -61,7 +61,7 @@ DOMSelectors.expensive.addEventListener('click',function(e){
   clearInputs();
   function makeCard(){
     richPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2>${farts.brand} ${farts.model}</h2></div>`)
+      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
     })
   }
   makeCard();
@@ -72,7 +72,7 @@ DOMSelectors.catalog.addEventListener('click',function(e){
   clearInputs();
   function makeCard(){
     allCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2>${farts.brand} ${farts.model}</h2></div>`)
+      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
     })
   }
   makeCard();
@@ -83,12 +83,6 @@ DOMSelectors.catalog.addEventListener('click',function(e){
 
 
 
-console.log("Brand:", Cars[0].brand);
-console.log("Model:", Cars[0].model);
-console.log("Year:", Cars[0].year);
-console.log("Color:", Cars[0].color);
-console.log("Price:", Cars[0].price);
-console.log("Features:", Cars[0].features.join(", "));
 
 
 

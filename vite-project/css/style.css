@@ -6,27 +6,27 @@
   --black: #000;
 
 
-  --primary-warm: var(--light-red);
-  --secondary-warm: var(--dark-red);
-
-  --primary-cool: var(--light-blue);
-  --secondary-cool: var(--dark-blue);
+  --primary: var(--dark-red);
+  --secondary: var(--light-red);
 }
+
+body {
+  background-color: var(--primary);
+}
+
+
 
 .warm {
-  background-color: var(--primary-warm);
-}
-.cool-secondary {
-  background-color: var(--secondary-cool);
-}
-
-.warm-secondary {
-  background-color: var(--secondary-warm);
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
 }
 
 .cool {
-  background-color: var(--primary-cool);
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
 }
+
+
 
 
 
@@ -34,11 +34,11 @@
   display: block;
   color:white;
   border-radius: 8px;
-  border: 4px solid white;
+  border: 4px solid black;
   border-style: solid;
   font-size: 2rem;
   cursor: pointer;
-  background: var(--black)
+  background: var(--secondary)
 }
 
 .gallery {
@@ -59,10 +59,11 @@ li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  color: white;
   font-size: 1.3rem;
   border: 4px solid black;
   border-radius: 12px;
-  background: var(--secondary-warm);
+  background-color: var(--secondary);
   cursor: pointer;
 }
 
@@ -77,8 +78,8 @@ li {
 .card-cool {
   display: flex;
   justify-content: space-around;
-  
   text-align: center;
+  background-color: var(--secondary);
   flex-wrap: wrap;
   flex-direction: column;
   height: 60vh;
@@ -88,7 +89,6 @@ li {
   color: white;
   width: 30%;
   border: 5px solid black;
-  background-color: var(--secondary-cool);
 }
 
 .card-desc {
