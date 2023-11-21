@@ -101,4 +101,6 @@ li {
   width: 65%;
   height: auto;
   object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid black;
 }
