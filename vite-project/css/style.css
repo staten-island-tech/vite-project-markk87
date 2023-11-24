@@ -95,11 +95,18 @@ li {
   font-size: 1.7rem;
 }
 
+.img:hover {
+  box-shadow: 10px 10px 5px black;
+  transform: scale(1.1);
+  transition: all 0.25s;
+
+}
+
 
 .img {
   display: flex;
-  width: 65%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid black;
