@@ -9,93 +9,77 @@ const DOMSelectors = {
   cheap: document.querySelector(".cheap"),
 };
 
-function clearInputs(){
-  DOMSelectors.gallery.innerHTML = ''
+function clearInputs() {
+  DOMSelectors.gallery.innerHTML = '';
 }
 
-document.querySelector(".wbut").addEventListener("click", function event() {
+document.querySelector(".wbut").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.add("warm");
     document.body.classList.remove("cool");
     document.querySelector(".wbut").textContent = "Night";
-
-
   } else {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
     document.querySelector(".wbut").textContent = "Morning";
-
-  };
-
+  }
 });
 
-const poorPeopleCars = Cars.filter((el)=> el.price < 23000);
+const poorPeopleCars = Cars.filter((el) => el.price < 23000);
 const normalPeopleCars = Cars.filter((el) => el.price > 23000 && el.price < 27000);
 const richPeopleCars = Cars.filter((el) => el.price > 35000);
-const allCars = Cars
+const allCars = Cars;
 
-DOMSelectors.cheap.addEventListener('click',function(e){
+function makeCard(carArray) {
+  return carArray.map((car) => {
+    const card = document.createElement('div');
+    card.className = 'card-cool';
+
+    const heading = document.createElement('h2');
+    heading.className = 'card-desc';
+    heading.textContent = `${car.brand} ${car.model}`;
+
+    const img = document.createElement('img');
+    img.className = 'img';
+    img.src = car.img;
+
+    card.appendChild(heading);
+    card.appendChild(img);
+
+    return card;
+  });
+}
+
+function appendCards(cards) {
+  cards.forEach((card) => {
+    DOMSelectors.gallery.appendChild(card);
+  });
+}
+
+DOMSelectors.cheap.addEventListener('click', function (e) {
   e.preventDefault();
   clearInputs();
-  function makeCard(){
-    poorPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model} </h2><img src=${farts.img} class=img></div>`)
-    })
-  }
-  makeCard();
+  const cards = makeCard(poorPeopleCars);
+  appendCards(cards);
 });
 
-DOMSelectors.average.addEventListener('click',function(e){
+DOMSelectors.average.addEventListener('click', function (e) {
   e.preventDefault();
   clearInputs();
-  function makeCard(){
-    normalPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
-    })
-  }
-  makeCard();
+  const cards = makeCard(normalPeopleCars);
+  appendCards(cards);
 });
 
-DOMSelectors.expensive.addEventListener('click',function(e){
+DOMSelectors.expensive.addEventListener('click', function (e) {
   e.preventDefault();
   clearInputs();
-  function makeCard(){
-    richPeopleCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
-    })
-  }
-  makeCard();
+  const cards = makeCard(richPeopleCars);
+  appendCards(cards);
 });
 
-DOMSelectors.catalog.addEventListener('click',function(e){
+DOMSelectors.catalog.addEventListener('click', function (e) {
   e.preventDefault();
   clearInputs();
-  function makeCard(){
-    allCars.forEach((farts)=>{
-      DOMSelectors.gallery.insertAdjacentHTML('beforeend',`<div class=card-cool><h2 class=card-desc>${farts.brand} ${farts.model}</h2><img src=${farts.img} class=img></div>`)
-    })
-  }
-  makeCard();
+  const cards = makeCard(allCars);
+  appendCards(cards);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- // if (myButton && myButton.classList.contains("cool-secondary")) {
-  //   myButton.classList.add("warm-secondary");
-  //   myButton.classList.remove("cool-secondary");
-  // } else if (myButton) {
-  //   myButton.classList.add("cool-secondary");
-  //   myButton.classList.remove("warm-secondary");
-  // }
