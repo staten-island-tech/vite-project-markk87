@@ -8,13 +8,17 @@
 
   --primary: var(--dark-red);
   --secondary: var(--light-red);
+  
 }
 
 body {
   background-color: var(--primary);
 }
 
-
+h1 {
+  font-size: 2.5rem;
+  display: inline-block;
+}
 
 .warm {
   --primary: var(--light-red);
@@ -89,6 +93,7 @@ li {
   color: white;
   width: 35%;
   border: 5px solid black;
+  box-shadow: 10px 10px 5px black;
 }
 
 .card-desc {
@@ -105,8 +110,8 @@ li {
 
 .img {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid black;

@@ -37,7 +37,7 @@ function makeCard(carArray) {
 
     const heading = document.createElement('h2');
     heading.className = 'card-desc';
-    heading.textContent = `${car.brand} ${car.model}`;
+    heading.textContent = `${car.brand} ${car.model} : $${car.price}`;
 
     const img = document.createElement('img');
     img.className = 'img';
