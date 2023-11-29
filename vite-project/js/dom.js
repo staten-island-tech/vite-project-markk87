@@ -9,6 +9,22 @@ const DOMSelectors = {
   cheap: document.querySelector(".cheap"),
 };
 
+
+
+
+// const deleteCard = function () {
+//   Cars.forEach((el) => el.remove());
+// }
+
+// let buttons = document.querySelectorAll("#buttons");
+
+// buttons.forEach((element) => element.addEventListener("click", function(){
+//   let filter = btn.textContent;
+//   Cars.filter((car) => car.classList.includes(filter)).forEach((c) => makeCard);
+  
+// }))
+
+
 function clearInputs() {
   DOMSelectors.gallery.innerHTML = '';
 }
