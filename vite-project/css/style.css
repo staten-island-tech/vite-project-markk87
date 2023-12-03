@@ -56,10 +56,10 @@ li {
   margin-right: 2%; 
 }
 
-.all,
-.cheap,
-.expensive,
-.average {
+#all,
+#cheap,
+#expensive,
+#average {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -100,7 +100,7 @@ li {
   font-size: 1.7rem;
 }
 
-.img:hover {
+img:hover {
   box-shadow: 10px 10px 5px black;
   transform: scale(1.1);
   transition: all 0.25s;
@@ -108,10 +108,10 @@ li {
 }
 
 
-.img {
+img {
   display: flex;
   width: 20vw;
-  height: 400px;
+  height: 40vh;
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid black;
