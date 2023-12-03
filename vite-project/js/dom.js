@@ -12,7 +12,38 @@ const DOMSelectors = {
 
 
 
+// const deleteCard = function () {
+//   Cars.forEach((el) => el.remove());
+// }
 
+// let buttons = document.querySelectorAll("#buttons");
+
+// buttons.forEach((element) => element.addEventListener("click", function(){
+//   let filter = btn.textContent;
+//   Cars.filter((car) => car.classList.includes(filter)).forEach((c) => makeCard);
+  
+// }))
+
+function populate(Cars){
+  Cars.forEach((el) => parent.insertAdjacentHTML(
+    "beforeend",
+    `<div class='card-cool'>
+    <h2 id="name" class="name">${el.brand}</h2>
+    <img id="${el.brand}" src="${el.img} class="image">
+    <h3 id="price" class="name">${el.price}</h3>
+    </div>`
+  ))
+}
+
+function filters() {
+  let buttons = document.querySelectorAll("#buttons")
+  buttons.forEach((btn) => btn.addEventListener("click", function(){
+    let category = btn.textContent.toLowerCase()
+    let newArr = items.filter((el)=> el.price.includes(poorPeopleCars))
+    document.querySelector(".parent").innerHTML = ""
+    populate(newArr)
+  }))
+}
 
 
 function clearInputs() {
