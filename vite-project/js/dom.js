@@ -28,7 +28,7 @@ function populate(parent, Cars){
     `<div class='card-cool'>
     <h2 id="name" class="name">${el.brand} ${el.model}</h2>
     <img src="${el.img} class= "img">
-    <h3 id="price" class="name">${el.price}</h3>
+    <h3 id="price" class="name">$${el.price}</h3>
     </div>`
   ))
 }
